@@ -1,0 +1,104 @@
+
+
+/* Mina stilar */
+html {
+	font-size: 16px;
+
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 62.5%;
+	background-color: #c7b299;
+
+}
+main {	
+	padding: 2%;
+	margin-left: 1%;
+	width: 74%;
+	float: left;
+	border: 1px solid white;
+
+}
+.logo {
+	border-bottom: 1px solid white;
+	margin-bottom: 5%;
+}
+
+.sidebar {
+	width: 20%;
+	float: left;
+	border: 1px solid white;
+}
+
+h1,h2,h3,h4,h5 {
+	font-family: 'Oswald', sans-serif;
+
+}
+header h2 {
+	font-size: 8em;
+	border-bottom: 1px solid white;
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 7%;
+
+}
+p {
+	font-size: 1.5em;
+
+}
+.top {
+	border-bottom: 1px solid white;
+}
+article {
+height: 80vh;
+}
+#clickerbutton {
+	background-color: #c7b299;
+	border: 0;
+	cursor: url(crosshair.png), auto;
+	margin: 0 auto;
+	background-image: url(tmodelclicker.png);
+	width: 228px;
+	height: 288px;
+
+}
+#clickerbutton:hover {
+	background-size: 101%;
+	background-position: center center;
+	width: 231px;
+	height: 292px;
+}
+#clickerbutton:active {
+	width: 228px;
+	height: 288px;
+	background-size: 100%;
+}
+#clickerbutton:focus, #powerump45:focus, #powerKarambit:focus, #poweArk47:focus{
+	outline: 0px;
+}
+#score {
+	font-family: 'Oswald', sans-serif;
+	font-size: 2em;
+	text-align: center;
+}
+#powerump45, #powerKarambit, #powerAk47 {
+	color: white;
+	border-radius: 5px;
+	border: solid black;
+	background-color: blue;
+	text-align: center;
+	font-size: 3em;
+	margin-top: 1%;
+
+}
+#game, #powerText {
+	text-align: center;
+}
+
+#powerUps ul {
+	list-style: none;
+}
+#powerUps {
+	border-top: 1px solid white;
+}
