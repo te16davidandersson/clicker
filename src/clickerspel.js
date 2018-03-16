@@ -38,7 +38,7 @@ m9Knapp.textContent = "M9 Bayonet: " + Math.floor(m9Cost) + "$";
 gloveKnapp.textContent = "Gloves: " + Math.floor(gloveCost) + "$";
 
 button.addEventListener("click", function() {
-	if (umpClicks > 0 && ak47Clicks > 0) {         //så att
+	if (umpClicks > 0 && ak47Clicks > 0) {         //så att om man köper flera powerups så adderas antalet clicks istället för att man får skyhög clickvalue.
 		umpClicks--;
 		ak47Clicks--;
 	} else if (umpClicks > 0 && ak47Clicks == 0) {
@@ -62,14 +62,14 @@ powerump45.addEventListener("click", function() {
 		if (umpClicks > 0){
 		umpClicks += 25;
 		bank -= umpCost;
-		umpCost *= 1.5;
+		umpCost += 5;
 			
 		} else {
 		powerText.textContent = "Köpte UMP-45";
 		clickValue *=2;
 		umpClicks +=25;
 		bank -= umpCost;
-		umpCost *=1.5;
+		umpCost +=5;
 		}
 
 		ump45Knapp.textContent = "UMP-45: " + Math.floor(umpCost) + "$";
@@ -89,14 +89,14 @@ powerak47.addEventListener("click", function() {
 		if (ak47Clicks > 0){
 		ak47Clicks += 30;
 		bank -= ak47Cost;
-		ak47Cost *= 1.5;
+		ak47Cost += 8;
 			
 		} else {
 		powerText.textContent = "Köpte AK47";
 		clickValue *=4;
 		ak47Clicks +=30;
 		bank -= ak47Cost;
-		ak47Cost *=1.5;
+		ak47Cost +=8;
 		}
 
 		ak47Knapp.textContent = "AK47: " + Math.floor(ak47Cost) + "$";
@@ -178,7 +178,7 @@ powerGlove.addEventListener("click", function() {
 	if (bank >= gloveCost && gloveTimer <= 0) {
 		bank -= gloveCost;
 		gloveCost +=2000;
-		gloveGains +=150;
+		gloveGains +=350;
 
 
 		gloveTimer += 10;			

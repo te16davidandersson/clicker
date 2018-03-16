@@ -37,7 +37,7 @@ h1,h2,h3,h4,h5 {
 header h2 {
 	font-size: 8em;
 	border-bottom: 1px solid white;
-	width: 50%;
+	width: 52%;
 	text-align: center;
 	margin: 0 auto;
 	margin-bottom: 7%;
@@ -102,4 +102,11 @@ height: 75vh;
 }
 #powerUps {
 	border-top: 1px solid white;
+}
+.powerupstext {
+	font-size: 5.5em;
+	margin: 0;
+	font-family: 'Impact', sans-serif;
+	border-bottom: 1px solid white;
+	text-align: center;
 }
